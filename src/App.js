@@ -1,5 +1,5 @@
 import { Helmet } from 'react-helmet';
-import { useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import './App.css';
 import About from './components/about_components/About';
 import Illustration from './components/illustration_components/Illustration';
@@ -10,11 +10,19 @@ import Footer from './components/footer_components/Footer';
 
 
 function App() {
-  const [navIsVisible, toggleNavIsVisible] = useState(false)
+  const [headerIsVisible, setHeaderIsVisible] = useState()
 
-  // var navbar = document.getElementById("navbar");
-  // var sticky = navbar.offsetTop;
+  const headerRef = useRef();
 
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      const entry = entries[0];
+      setHeaderIsVisible(entry.isIntersecting)
+      console.log('entries', entries)
+    })
+    observer.observe(headerRef.current)
+  }, [])
 
   return (
     <div className="App">
@@ -22,7 +30,7 @@ function App() {
         <title>June Valentino - Developer</title>
       </Helmet>
       <div className="margins">
-        <header>
+        <header ref={headerRef}>
           <div>
             <TopBar></TopBar>
           </div>
@@ -32,20 +40,11 @@ function App() {
         </header>
         <body>
           <main>
-            <div>
-              <NavBar
-                // visible={navIsVisible}
-                setVisible={toggleNavIsVisible}
-              ></NavBar>
-            </div>
-            {/* {navIsVisible === true && (
-              <div>
-                <NavBar
-                  // visible={navIsVisible}
-                  setVisible={toggleNavIsVisible}
-                ></NavBar>
+            {headerIsVisible === false && (
+              <div id="sticky">
+                <NavBar></NavBar>
               </div>
-            )} */}
+            )}
             <div>
               <Software></Software>
             </div>
