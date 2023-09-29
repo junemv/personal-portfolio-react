@@ -1,38 +1,39 @@
+#sticky {
+  position: fixed;
+  top: 0;
+  width: 90vw;
+}
+
 .App {
   text-align: center;
+  vertical-align: center;
+  background-color: pink;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.margins {
+  width: 90vw;
+  margin-left: 5vw;
+  height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* .main-body {
+  background-color: coral;
+  vertical-align: center;
+  width: 90vw;
+  height: 100vh;
+  display: grid;
+  grid-template: 100px 20px auto 50px / 1fr 1fr 1fr 1fr;
+} */
+
+header {
+  background-color: teal;
+  grid-column: 1 / 5;
+  height: 10vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+main {
+  background-color: cyan;
+  grid-row: 3 / 4;
+  grid-column: 1 / 5;
+  height: 100vh;
 }

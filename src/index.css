@@ -7,6 +7,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* body {
+  vertical-align: center;
+  width: 90vw;
+  height: 100vh;
+  display: grid;
+  grid-template: 100px 20px auto 50px / 1fr 1fr 1fr 1fr;
+} */
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

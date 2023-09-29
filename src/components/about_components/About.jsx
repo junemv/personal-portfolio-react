@@ -3,11 +3,11 @@ import "./About.css";
 
 const About = () => {
 
-    return (
-        <div className="about-page">
-            About
-        </div>
-    )
+	return (
+		<div className="about-page">
+			About
+		</div>
+	)
 }
 
 export default About;
