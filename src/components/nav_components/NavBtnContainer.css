@@ -1,0 +1,16 @@
+/* ID */
+#navbtncontainer {
+	background-color: plum;
+	padding: 0;
+}
+
+ul {
+	padding: 0;
+	list-style-type: none;
+}
+
+li {
+	display: inline-block;
+	list-style: none;
+	padding: 2%;
+}

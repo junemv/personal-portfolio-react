@@ -7,7 +7,7 @@ import NavBar from './components/nav_components/Nav';
 import Software from './components/software_components/Software';
 import TopBar from './components/top_bar_components/Topbar';
 import Footer from './components/footer_components/Footer';
-
+import NavBtnContainer from './components/nav_components/NavBtnContainer';
 
 function App() {
   const [headerIsVisible, setHeaderIsVisible] = useState()
@@ -31,12 +31,9 @@ function App() {
       </Helmet>
       <div className="margins">
         <header ref={headerRef}>
-          <div>
-            <TopBar></TopBar>
-          </div>
-          <div>
-            <About></About>
-          </div>
+          <TopBar></TopBar>
+          <About></About>
+          <NavBtnContainer></NavBtnContainer>
         </header>
         <body>
           <main>
@@ -45,18 +42,12 @@ function App() {
                 <NavBar></NavBar>
               </div>
             )}
-            <div>
-              <Software></Software>
-            </div>
-            <div>
-              <Illustration></Illustration>
-            </div>
+            <Software></Software>
+            <Illustration></Illustration>
           </main>
         </body>
         <footer>
-          <div>
-            <Footer></Footer>
-          </div>
+          <Footer></Footer>
         </footer>
       </div>
     </div>

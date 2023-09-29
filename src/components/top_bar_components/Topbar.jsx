@@ -4,8 +4,10 @@ import "./Topbar.css";
 const TopBar = () => {
 
 	return (
-		<div className="top-bar">
-			TopBar
+		<div className="topbar">
+			<div id="logo">
+				logo
+			</div>
 		</div>
 	)
 }

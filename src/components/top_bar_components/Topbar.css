@@ -1,0 +1,11 @@
+/* ID */
+#logo {
+	height: 80px;
+	width: 250px;
+	background-color: lavender;
+}
+
+/* Class */
+.topbar {
+	padding-bottom: 20px;
+}

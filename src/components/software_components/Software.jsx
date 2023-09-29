@@ -3,11 +3,11 @@ import "./Software.css";
 
 const Software = () => {
 
-    return (
-        <div className="software-page">
-            Software
-        </div>
-    )
+	return (
+		<div className="software-page">
+			Software
+		</div>
+	)
 }
 
 export default Software;

@@ -1,0 +1,10 @@
+/* Class */
+.medbtn {
+	background-color: lightseagreen;
+	height: 300px;
+	width: 300px;
+}
+
+.medbtn:hover {
+	scale: 1 105%;
+}

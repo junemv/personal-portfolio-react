@@ -16,19 +16,10 @@
   height: 100%;
 }
 
-/* .main-body {
-  background-color: coral;
-  vertical-align: center;
-  width: 90vw;
-  height: 100vh;
-  display: grid;
-  grid-template: 100px 20px auto 50px / 1fr 1fr 1fr 1fr;
-} */
-
 header {
   background-color: teal;
   grid-column: 1 / 5;
-  height: 10vh;
+  padding: 20px;
 }
 
 main {

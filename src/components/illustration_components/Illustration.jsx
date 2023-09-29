@@ -3,11 +3,11 @@ import "./Illustration.css";
 
 const Illustration = () => {
 
-    return (
-        <div className="illustration">
-            Illustration
-        </div>
-    )
+	return (
+		<div className="illustration">
+			Illustration
+		</div>
+	)
 }
 
 export default Illustration;
