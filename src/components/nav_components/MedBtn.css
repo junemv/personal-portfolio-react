@@ -1,8 +1,9 @@
 /* Class */
 .medbtn {
 	background-color: lightseagreen;
-	height: 300px;
-	width: 300px;
+	height: 20vh;
+	width: 20vw;
+	border-radius: 25px;
 }
 
 .medbtn:hover {
