@@ -1,19 +1,42 @@
+/* ID */
+#App {
+  text-align: center;
+  vertical-align: center;
+  background-color: pink;
+}
+
 #sticky {
   position: fixed;
   top: 0;
   width: 90vw;
 }
 
-.App {
-  text-align: center;
-  vertical-align: center;
-  background-color: pink;
+#top-btn {
+  position: fixed;
+  height: 75px;
+  width: 75px;
+  border-radius: 50px;
+  left: 95%;
+  bottom: 0px;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  border-style: none;
+  background-color: plum;
 }
 
-.margins {
-  width: 90%;
+#top-btn:hover {
+  cursor: pointer;
+  background-color: rosybrown;
+}
+
+/* class */
+.mobile-margins-false {
+  margin-right: 5%;
   margin-left: 5%;
-  height: 100%;
+}
+
+.mobile-margins-true {
+  width: 100%;
 }
 
 header {
@@ -26,5 +49,5 @@ main {
   background-color: cyan;
   grid-row: 3 / 4;
   grid-column: 1 / 5;
-  height: 100vh;
+  padding: 20px;
 }

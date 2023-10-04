@@ -4,8 +4,10 @@
 	height: 20vh;
 	width: 20vw;
 	border-radius: 25px;
+	border-style: none;
 }
 
 .medbtn:hover {
-	scale: 1 105%;
+	scale: 105% 105%;
+	cursor: pointer;
 }
