@@ -1,0 +1,23 @@
+/* ID */
+#social-media-bar {
+  /* background-color: aliceblue; */
+	width: 300px;
+	margin: auto;
+	grid-column: 5 / 6;
+}
+
+/* class */
+.soc-btn {
+	height: 50px;
+  width: 50px;
+  margin-left: 10px;
+  display: inline-block;
+  text-decoration: none;
+  overflow: hidden;
+	fill: white;
+	transition: fill 500ms;
+}
+
+.soc-btn:hover {
+	fill: aqua;
+}

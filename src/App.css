@@ -2,6 +2,8 @@
 #App {
   text-align: center;
   vertical-align: center;
+  display: grid;
+  /* grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr; */
   background-color: pink;
 }
 
@@ -45,9 +47,12 @@ header {
   padding: 20px;
 }
 
+body {
+  grid-column: 1 / 5;
+}
 main {
   background-color: cyan;
-  grid-row: 3 / 4;
-  grid-column: 1 / 5;
+  /* grid-row: 3 / 4; */
+  /* grid-column: 1 / 5; */
   padding: 20px;
 }

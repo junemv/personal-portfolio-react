@@ -2,10 +2,14 @@
 #logo {
 	height: 80px;
 	width: 250px;
+	/* position: absolute; */
+	grid-column: 1 / 2;
 	background-color: lavender;
 }
 
 /* Class */
 .topbar {
 	padding-bottom: 20px;
+	display: grid;
+	grid-template: 1fr / 1fr 1fr 1fr 1fr;
 }

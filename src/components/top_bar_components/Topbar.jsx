@@ -1,5 +1,6 @@
 import React from 'react';
 import "./Topbar.css";
+import SocialMediaBar from '../general_components/SocialMediaBar';
 
 const TopBar = () => {
 
@@ -8,6 +9,7 @@ const TopBar = () => {
 			<div id="logo">
 				logo
 			</div>
+			<SocialMediaBar></SocialMediaBar>
 		</div>
 	)
 }
