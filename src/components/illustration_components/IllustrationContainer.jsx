@@ -1,7 +1,7 @@
 import React from 'react';
+import CarouselHero from '../general_components/CarouselHero';
 import "./IllustrationContainer.css";
 import IllustrationPreview from './IllustrationPreview';
-import Carousel from '../general_components/Carousel';
 
 const IllustrationContainer = () => {
 
@@ -9,9 +9,7 @@ const IllustrationContainer = () => {
 		<div id="illustration-container">
 			<div>
 				<IllustrationPreview></IllustrationPreview>
-			</div>
-			<div>
-				<Carousel></Carousel>
+				<CarouselHero imgSrc={"/Users/junemv/Development/personal-portfolio-react/assets/common/carousel_temp"}></CarouselHero>
 			</div>
 		</div>
 	)

@@ -87,7 +87,7 @@ function App() {
         <title>June Valentino - Developer</title>
       </Helmet>
       <header ref={headerRef} className={"mobile-margins-" + isMobile}>
-        <TopBar>
+        <TopBar isMobile={isMobile}>
         </TopBar>
         {/* <button onClick={()=>handleNavClick()}>CLICK ME</button> */}
         <About></About>

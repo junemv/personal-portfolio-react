@@ -1,17 +1,13 @@
 import React from 'react';
 import "./SoftwareContainer.css";
-import Carousel from '../general_components/Carousel';
-import SoftwareDescription from './SoftwareDescription';
+import CarouselHero from '../general_components/CarouselHero';
 
 const SoftwareContainer = () => {
 
 	return (
 		<div id="software-container">
 			<div>
-				<SoftwareDescription></SoftwareDescription>
-			</div>
-			<div>
-				<Carousel></Carousel>
+				<CarouselHero></CarouselHero>
 			</div>
 		</div>
 	)
