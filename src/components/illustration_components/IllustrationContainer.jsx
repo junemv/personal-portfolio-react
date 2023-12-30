@@ -9,7 +9,7 @@ const IllustrationContainer = () => {
 		<div id="illustration-container">
 			<div>
 				<IllustrationPreview></IllustrationPreview>
-				<CarouselHero imgSrc={"/Users/junemv/Development/personal-portfolio-react/assets/common/carousel_temp"}></CarouselHero>
+				{/* <CarouselHero imgSrc={"/Users/junemv/Development/personal-portfolio-react/assets/common/carousel_temp"}></CarouselHero> */}
 			</div>
 		</div>
 	)

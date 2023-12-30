@@ -136,6 +136,7 @@ export function useCarousel(
   useEffect(() => {
     const id = setTimeout(() => dispatch({ type: 'next', length }), interval);
     return () => clearTimeout(id);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [state.offset, state.active]);
 
   useEffect(() => {
