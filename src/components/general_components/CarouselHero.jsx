@@ -1,5 +1,4 @@
 import React from 'react';
-import { useCarousel } from '../../lib/useCarousel.ts';
 import CarouselProjectContainer from './CarouselProjectContainer.jsx'
 import img1 from '../../assets/common/carousel_temp/1.jpg';
 import img2 from '../../assets/common/carousel_temp/2.jpg';
@@ -25,7 +24,6 @@ const CarouselHero = (props) => {
 		},
 	]
 
-	const { ref, previous, next, setCurrent, reset } = useCarousel();
 	const carouselListContents = [];
 
 	for (let imgObj of imagesDict) {
@@ -41,8 +39,8 @@ const CarouselHero = (props) => {
 
 	return (
 		<div id="carousel-hero">
-			<button onClick={() => previous()}>Previous</button>
-			<button onClick={() => next()}>Next</button>
+			{/* <button onClick={() => previous()}>Previous</button>
+			<button onClick={() => next()}>Next</button> */}
 			<ul className="carousel__list">{carouselListContents}</ul>
 		</div>
 	)

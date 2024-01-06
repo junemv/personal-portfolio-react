@@ -1,7 +1,7 @@
 import React from 'react';
-import "./CarouselProjectContainer.css";
+import "./SoftwareSlide.css";
 
-const CarouselProjectContainer = (props) => {
+const SoftwareSlide = (props) => {
 	const imgObj = props.imgObj;
 
 	return (
@@ -13,4 +13,4 @@ const CarouselProjectContainer = (props) => {
 	)
 }
 
-export default CarouselProjectContainer;
+export default SoftwareSlide;
