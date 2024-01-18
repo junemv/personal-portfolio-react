@@ -11,6 +11,7 @@
 	overflow: hidden;
 	background-color: darkorchid;
 	border: 2px solid pink;
+	z-index: 101;
 }
 
 #mobile-nav-btn-contact {

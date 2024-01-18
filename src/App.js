@@ -109,19 +109,6 @@ function App() {
         )}
       </header>
       <body className={"mobile-margins-" + isMobile}>
-        {isMobile === false && 
-          (headerIsVisible === false &&  (
-            <div id="sticky">
-              <NavBar
-                handleNavClick={handleNavClick} 
-                handleTopScrollClick={handleTopScrollClick}
-                softwareRef={softwareRef}
-                illustrationRef={illustrationRef}
-                contactRef={contactRef}
-              ></NavBar>
-            </div>
-          )
-        )}
         {isMobile === false &&
           (scrollVisible === true && (
             <button id="top-btn" onClick={()=>handleTopScrollClick()}>
@@ -144,6 +131,19 @@ function App() {
       <footer className={"mobile-margins-" + isMobile}>
         <Footer></Footer>
       </footer>
+      {isMobile === false && 
+          (headerIsVisible === false &&  (
+            <div id="sticky">
+              <NavBar
+                handleNavClick={handleNavClick} 
+                handleTopScrollClick={handleTopScrollClick}
+                softwareRef={softwareRef}
+                illustrationRef={illustrationRef}
+                contactRef={contactRef}
+              ></NavBar>
+            </div>
+          )
+        )}
     </div>
   );
 }

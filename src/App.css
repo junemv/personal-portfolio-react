@@ -10,7 +10,8 @@
 #sticky {
   position: fixed;
   top: 0;
-  width: 90vw;
+  width: 100vw;
+  z-index: 100;
 }
 
 #top-btn {
@@ -24,6 +25,7 @@
   margin: 0 auto;
   border-style: none;
   background-color: plum;
+  z-index: 102;
 }
 
 #top-btn:hover {

@@ -12,7 +12,7 @@ const Carousel = ({ slides }) => {
         totalSlides={3}
 				infinite={true}
 				isPlaying={true}
-				interval={3000}
+				interval={5000}
       >
 					<Slider className="slider">
 						{slides.map((slide, i) => (
