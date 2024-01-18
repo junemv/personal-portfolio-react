@@ -49,6 +49,7 @@ header {
 body {
   grid-column: 1 / 5;
 }
+
 main {
   background-color: cyan;
   /* grid-row: 3 / 4; */

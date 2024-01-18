@@ -89,7 +89,6 @@ function App() {
       <header ref={headerRef} className={"mobile-margins-" + isMobile}>
         <TopBar isMobile={isMobile}>
         </TopBar>
-        {/* <button onClick={()=>handleNavClick()}>CLICK ME</button> */}
         <About></About>
         {isMobile === false && (
           <NavBtnContainer 
